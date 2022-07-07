@@ -6,12 +6,12 @@ services:
     working_dir: /home/node/app
     user: root
     ports:
-      - 8080:8080
+      - 80:80
     environment:
       PUBLISH_SECRET_URI: /new
       KEY_NAME_RANDOM_BYTES: 10
-      DOMAIN: localhost:8080
-      PORT: 8080
+      DOMAIN: dh-ots.azurewebsites.net:80
+      PORT: 80
       HTTP_TIMEOUT_MS: 5000
       MAX_UPLOAD_KB: 128
     volumes:
