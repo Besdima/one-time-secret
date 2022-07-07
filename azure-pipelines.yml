@@ -37,3 +37,11 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+    - task: DockerCompose@0
+      inputs:
+        containerregistrytype: 'Azure Container Registry'
+        azureSubscription: 'MCT(91fda4a0-9c6c-4554-aca3-d096f5aacb0c)'
+        azureContainerRegistry: '{"loginServer":"besdima.azurecr.io", "id" : "/subscriptions/91fda4a0-9c6c-4554-aca3-d096f5aacb0c/resourceGroups/rg-containers/providers/Microsoft.ContainerRegistry/registries/besdima"}'
+        dockerComposeFile: '**/docker-compose.yml'
+        action: 'Run a Docker Compose command'
+        dockerComposeCommand: 'up'
