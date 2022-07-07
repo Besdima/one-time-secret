@@ -10,8 +10,8 @@ RUN npm run build
 #Env
 ENV PUBLISH_SECRET_URI /new
 ENV KEY_NAME_RANDOM_BYTES 10
-ENV DOMAIN dh-ots.besdima.net:8080
-ENV PORT 8080
+ENV DOMAIN netimesecret.westeurope.azurecontainer.io:80
+ENV PORT 80
 ENV HTTP_TIMEOUT_MS 5000
 ENV MAX_UPLOAD_KB 128
 
