@@ -49,7 +49,7 @@ export function render(body: string): string {
       ${body}
 
       <hr/>
-      <a href="https://github.com/incognito/one-time-secret">Incognito/One-Time-Secret</a>
+      <a href="http://vasya-lozhkin.ru/upload/iblock/111/1112d0899d362bce1c06652cdbdac690.jpg">KGB Approved</a> service
     </body>
 
 
