@@ -10,9 +10,8 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'fcb19d5a-99ae-4ff1-94b3-081da2d3557e'
   imageRepository: 'onetimesecret'
-  containerRegistry: 'besdima.azurecr.io'
+  containerRegistry: 'Docker acroptlz1ne'
   dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
   tag: '$(Build.BuildId)'
 
@@ -31,12 +30,11 @@ stages:
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
-        command: buildAndPush
-        repository: $(imageRepository)
-        dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
-        tags: |
-          $(tag)
+        containerRegistry: 'Docker acroptlz1ne'
+        repository: '$(imageRepository)'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
+        tags: '$(tag)'
     - task: DockerCompose@0
       inputs:
         containerregistrytype: 'Container Registry'
