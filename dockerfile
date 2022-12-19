@@ -10,7 +10,7 @@ RUN npm run build
 #Env
 ENV PUBLISH_SECRET_URI /new
 ENV KEY_NAME_RANDOM_BYTES 10
-ENV DOMAIN onetimesecret.besdima.net
+ENV DOMAIN onetimesecret.besdima.dev
 ENV PORT 80
 ENV HTTP_TIMEOUT_MS 5000
 ENV MAX_UPLOAD_KB 128
