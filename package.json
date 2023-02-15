@@ -30,10 +30,13 @@
   "author": "Brian Graham",
   "keywords": [],
   "dependencies": {
+dependabot/npm_and_yarn/winston-syslog-and-types/winston-syslog-2.7.0
     "@types/winston-syslog": "^2.0.4",
     "typescript": "^4.9.5",
+dependabot/npm_and_yarn/winston-3.8.2
     "winston": "^3.8.2",
     "winston-syslog": "^2.4.4"
+master
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
