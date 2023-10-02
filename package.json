@@ -30,7 +30,7 @@
   "author": "Brian Graham",
   "keywords": [],
   "dependencies": {
-    "@types/winston-syslog": "^2.0.4",
+    "@types/winston-syslog": "^2.4.1",
     "typescript": "^4.9.5",
     "winston": "^3.9.0",
     "winston-syslog": "^2.4.4"
